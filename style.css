@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Space Grotesk";
+    src: url(fonts/SpaceGrotesk-VariableFont_wght.ttf);
+}
+
+header {
+    height: 150px;
+    background-color: black;
+}
+
+.container-grid {
+    width: 80vw;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+header div.container-grid {
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu {
+    width: 850px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu a {
+    color: white ;
+    font-family: "Space Grotesk";
+    font-size: 26px;
+    text-decoration: underline transparent;
+    text-decoration-thickness: 2px;
+
+    transition: text-decoration 500ms ease;
+}
+
+.menu a:hover {
+    text-decoration-color: white;
+    color:#21DFD4;
+}
+
+#Sobre {
+    background-color: black;
+    height: 700px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 100px 25%;
+}
+
+#Sobre .title {
+    color: White;
+    font-family: "Space Grotesk";
+    font-size: 30px;
+}
+
+#Sobre a {
+    color: White;
+    font-family: "Space Grotesk";
+    font-size: 20px;
+    text-decoration: underline transparent;
+    position: relative;
+    top: 30px;
+    right: 60px;
+}
+
+#Sobre img {
+    width: 350px;
+    height: 350px;
+}
+
+#Cursos {
+    background-color: black;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    
+}
+
+#Cursos h2 {
+    color: #21DFD4;
+    font-family: "Space Grotesk";
+    font-size: 30px;
+    text-decoration: underline transparent;
+}
+
+#Cursos p {
+    color: White;
+    font-family: "Space Grotesk";
+    font-size: 26px;
+    text-decoration: underline transparent;
+}
