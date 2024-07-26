@@ -12,6 +12,9 @@
 header {
     height: 150px;
     background-color: black;
+    z-index: 5;
+    position: fixed;
+    padding: 4rem 8% 4rem;
 }
 
 .container-grid {
@@ -81,10 +84,8 @@ header div.container-grid {
 
 #Cursos {
     background-color: black;
-    height: 500px;
-    display: flex;
-    align-items: center;
-    
+    height: 1000px;
+    text-align: center;
 }
 
 #Cursos h2 {
@@ -94,9 +95,118 @@ header div.container-grid {
     text-decoration: underline transparent;
 }
 
-#Cursos p {
-    color: White;
-    font-family: "Space Grotesk";
+.container-cards {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.card img {
+    height: 70%;
+    width: 75%;
+    margin-top: 20px;
+    opacity: 90%;
+    border-radius: 50px;
+}
+
+.card3 img {
+    height: 70%;
+    width: 75%;
+    margin-top: 20px;
+    opacity: 90%;
+    border-radius: 50px;
+}
+
+.card {
+    width: 350px;
+    height: 250px;
+    background-color:black;
+    border-color: #21DFD4;
+    border-radius: 50px;
+}
+
+.card3 {
+    width: 350px;
+    height: 250px;
+    background-color: black;
+    border-color: #21DFD4;
+    border-radius: 50px;
+    margin-left: 585px;
+    margin-top: 100px;
+}
+
+.card button {
+    
+    width: 75%;
+    height: 40px;
+    
+    background-color: var(--azulescuro-Ready) ;
+    
+    border: none;
+    border-radius: 8px;
+    
+    color: #ffffff;
+    
+    font-family: 'Padauk';
     font-size: 26px;
+    font-weight: 600;
+    
+    cursor: pointer;
+    
+    transition: background-color 500ms;
+
+    margin-bottom: 20px;
+}
+
+.card3 button {
+    
+    width: 75%;
+    height: 40px;
+    
+    background-color: var(--azulescuro-Ready) ;
+    
+    border: none;
+    border-radius: 8px;
+    
+    color: #fdfdfd;
+    
+    font-family: 'Padauk';
+    font-size: 26px;
+    font-weight: 600;
+    
+    cursor: pointer;
+    
+    transition: background-color 500ms;
+
+    margin-bottom: 20px;
+}
+
+#Redes {
+    height: 700px;
+    background-color: black;
+    text-align: center;
+}
+
+#Redes h2 {
+    color: #21DFD4;
+    font-family: "Space Grotesk";
+    font-size: 30px;
     text-decoration: underline transparent;
+}
+
+#Redes p {
+    color: white;
+}
+
+.redess {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.redess img {
+    width: 100px;
+    height: 100px;
+    margin-top: 200px;
 }
