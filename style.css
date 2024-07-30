@@ -103,6 +103,14 @@ header div.container-grid {
     margin-top: 100px;
 }
 
+.container-cards3 {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 100px;
+}
+
 .card img {
     height: 70%;
     width: 75%;
@@ -133,7 +141,6 @@ header div.container-grid {
     background-color: black;
     border-color: #21DFD4;
     border-radius: 50px;
-    margin-left: 585px;
     margin-top: 100px;
 }
 
@@ -209,4 +216,67 @@ header div.container-grid {
     width: 100px;
     height: 100px;
     margin-top: 200px;
+}
+
+#Habilidades {
+    height: 600px;
+    background-color: black;
+    text-align: center;
+} 
+
+#Habilidades h2 {
+    color: #21DFD4;
+    font-family: "Space Grotesk";
+    font-size: 30px;
+    text-decoration: underline transparent;
+}
+
+.linguagens {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.linguagens img {
+    width: 100px;
+    height: 100px;
+    margin-top: 200px;
+}
+
+@media screen and (max-width: 900px) {
+    #Sobrem .title{
+        font-size: 26px;
+    }
+
+    #Sobre a {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .menu {
+        height: 400px;
+        width: 300px;
+
+        padding: 0px 30px;
+
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+
+        background-color: rgba(0, 0, 0, 0.61);
+        margin-top: 100px;
+        border-color: #21DFD4;
+
+        position: relative;
+        left: 58px;
+        z-index: 1;
+    }
+
+    #Habilidades{
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+
 }
