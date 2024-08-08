@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 @font-face {
     font-family: "Space Grotesk";
     src: url(fonts/SpaceGrotesk-VariableFont_wght.ttf);
