@@ -242,6 +242,7 @@ header div.container-grid {
     margin-top: 200px;
 }
 
+
 @media screen and (max-width: 900px) {
     header {
         position: initial;
