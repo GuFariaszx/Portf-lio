@@ -1,0 +1,285 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: "Space Grotesk";
+    src: url(fonts/SpaceGrotesk-VariableFont_wght.ttf);
+}
+
+canvas#particles {
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+header {
+    height: 150px;
+    background-color: rgba(0, 0, 0, 0.808);
+    z-index: 5;
+    position: fixed;
+    backdrop-filter: blur(10px);
+    padding: 4rem 8% 4rem;
+}
+
+.container-grid {
+    width: 90vw;
+    max-width: 1620px;
+    margin: 0 auto;
+}
+
+header div.container-grid {
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu {
+    width: 850px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu a {
+    color: white;
+    font-family: "Space Grotesk";
+    font-size: 26px;
+    text-decoration: underline transparent;
+    text-decoration-thickness: 2px;
+    transition: text-decoration 500ms ease, color 0.3s ease;
+}
+
+.menu a:hover {
+    text-decoration-color: white;
+    color:#21DFD4;
+    text-shadow:0 0 10px #21DFD4;
+}
+
+#Sobre, #Habilidades, #Projetos, #Redes {
+    position: relative;
+    z-index: 2;
+    border-radius: 20px;
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(33,223,212,0.2);
+}
+
+#Sobre {
+    height: 700px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 100px 25%;
+}
+
+#Sobre .title {
+    color:#21DFD4;
+    font-family: "Space Grotesk";
+    font-size: 30px;
+}
+
+#Sobre a {
+    color: White;
+    font-family: "Space Grotesk";
+    font-size: 20px;
+    text-decoration: underline transparent;
+    position: relative;
+    top: 30px;
+    right: 60px;
+}
+
+#Sobre img {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: glowPulse 2s infinite alternate;
+}
+
+#Projetos {
+    height: 1000px;
+    text-align: center;
+}
+
+.container-cards, .container-cards3 {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.card, .card3 {
+    width: 350px;
+    height: 250px;
+    border: 1px solid #21DFD4;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.card:hover, .card3:hover {
+    transform: scale(1.05) rotateX(5deg) rotateY(5deg);
+    box-shadow: 0 0 25px #21DFD4;
+}
+
+.card img, .card3 img {
+    height: 70%;
+    width: 75%;
+    margin-top: 20px;
+    opacity: 90%;
+    border-radius: 50px;
+}
+
+.card3 {
+    margin-top: 100px;
+}
+
+.card button, .card3 button {
+    width: 75%;
+    height: 40px;
+    background-color: var(--azulescuro-Ready);
+    border: none;
+    border-radius: 8px;
+    color: #ffffff;
+    font-family: 'Padauk';
+    font-size: 26px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 500ms, transform 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.card button:hover, .card3 button:hover {
+    transform: scale(1.05);
+    background-color: #21DFD4;
+}
+
+#Redes {
+    height: 700px;
+    text-align: center;
+}
+
+.redess {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.redess img {
+    width: 100px;
+    height: 100px;
+    margin-top: 200px;
+    transition: all 0.3s ease;
+    animation: glowPulse 2s infinite alternate;
+}
+
+#Redes p {
+    color: #21DFD4;
+    font-family: "Space-Grotesk";
+    font-size: 20px;
+    text-shadow: #002fff;
+    margin-top: 300px;
+}
+
+#Habilidades {
+    height: 600px;
+    text-align: center;
+} 
+
+.linguagens {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.linguagens img {
+    width: 100px;
+    height: 100px;
+    margin-top: 200px;
+    transition: transform 0.3s ease;
+}
+
+.linguagens img:hover {
+    transform: scale(1.2);
+}
+
+@keyframes glowPulse {
+  0% { box-shadow: 0 0 5px #21DFD4; }
+  50% { box-shadow: 0 0 20px #21DFD4; }
+  100% { box-shadow: 0 0 5px #21DFD4; }
+}
+
+h2 {
+  background: linear-gradient(90deg, #21dfd4, #007bb4, #ffffff);
+  background-size: 300% 300%;
+  font-size: 40px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: neonGradient 5s ease infinite;
+}
+
+@keyframes neonGradient {
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0% 50%;}
+}
+
+@media screen and (max-width: 900px) {
+    header { position: initial; }
+    #Sobre { display: flex; flex-direction: column; }
+    #Sobre img { margin-top: 50px; width: 300px; height: 300px; }
+    #Sobrem .title{ font-size: 26px; }
+    #Sobre a { font-size: 20px; position: relative; left: 10px; }
+}
+
+@media screen and (max-width: 600px) {
+    header { position: initial; }
+    #Sobre { display: flex; flex-direction: column; }
+    #Sobre img { margin-top: 50px; width: 250px; height: 250px; }
+    #Sobre a { font-size: 20px; left: 10px; }
+    .menu a { font-size: 20px; }
+    .card3 button, .card button { font-size: 20px; }
+    .card img, .card3 img { height: 50%; width: 50%; }
+    .redess img, .linguagens img { width: 50px; height: 50px; }
+    .container-cards { flex-direction: column; }
+    .container-cards3 { bottom: 170px; }
+}
+
+@media screen and (max-width: 400px) {
+    #Sobre img { width: 200px; height: 200px; }
+    #Sobre a { font-size:18px; }
+    .menu a { font-size: 18px; }
+}
+
+.smoke {
+  position: absolute;
+  background: #21DFD4;
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  animation: smokeEffect 1.2s forwards;
+  filter: blur(3px);
+}
+
+@keyframes smokeEffect {
+  0% { transform: translate(-50%, -50%) scale(0.5); opacity: 0.15; }
+  100% { transform: translate(-50%, -70%) scale(1.5); opacity: 0; }
+}
